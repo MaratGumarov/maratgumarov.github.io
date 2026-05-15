@@ -3,360 +3,444 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marat Gumarov - Java/Kotlin Developer</title>
-    <meta name="description" content="Experienced Java/Kotlin Developer with extensive experience in designing scalable systems and enhancing data integration using cutting-edge technologies.">
-    <meta name="keywords" content="Java Developer, Data Engineer, Backend Developer, Spring Boot, Microservices, Apache Spark, Hadoop, AWS, Kotlin, Software Engineer">
+    <title>Marat Gumarov — Software Engineer · Backend & Agentic AI</title>
+    <meta name="description" content="Software engineer with 8+ years of experience building Java/Kotlin backend systems, now focused on agentic AI — production AI agents, MCP servers, and LLM integrations on Anthropic Claude and AWS Bedrock.">
+    <meta name="keywords" content="AI Engineer, Agentic AI, MCP, Model Context Protocol, Anthropic Claude, AWS Bedrock, AI Agents, Software Engineer, Backend Developer, Kotlin, Java, Python, Spring Boot, FastAPI, Microservices, GraphQL">
     <meta name="author" content="Marat Gumarov">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://MaratGumarov.github.io/CV/">
-    <meta property="og:title" content="Marat Gumarov - Java/Kotlin Developer">
-    <meta property="og:description" content="Experienced Java/Kotlin Developer with extensive experience in designing scalable systems and enhancing data integration using cutting-edge technologies.">
-    <meta property="og:image" content="https://MaratGumarov.github.io/CV/og-image.png">
-    
+    <meta property="og:url" content="https://maratgumarov.github.io/">
+    <meta property="og:title" content="Marat Gumarov — Software Engineer · Backend & Agentic AI">
+    <meta property="og:description" content="Software engineer with 8+ years of experience building Java/Kotlin backend systems, now focused on agentic AI — production AI agents, MCP servers, and LLM integrations.">
+    <meta property="og:image" content="https://maratgumarov.github.io/marat.jpeg">
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://MaratGumarov.github.io/CV/">
-    <meta property="twitter:title" content="Marat Gumarov - Java/Kotlin Developer">
-    <meta property="twitter:description" content="Experienced Java/Kotlin Developer with extensive experience in designing scalable systems and enhancing data integration using cutting-edge technologies.">
-    <meta property="twitter:image" content="https://MaratGumarov.github.io/CV/og-image.png">
-    
+    <meta property="twitter:url" content="https://maratgumarov.github.io/">
+    <meta property="twitter:title" content="Marat Gumarov — Software Engineer · Backend & Agentic AI">
+    <meta property="twitter:description" content="Software engineer with 8+ years of experience building Java/Kotlin backend systems, now focused on agentic AI — production AI agents, MCP servers, and LLM integrations.">
+    <meta property="twitter:image" content="https://maratgumarov.github.io/marat.jpeg">
+
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23F5F2EA'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23BB4B2A'/%3E%3C/svg%3E">
+
+    <!-- Set theme before paint to avoid flash -->
+    <script>try{if(localStorage.getItem('cv-theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Hanken+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header class="header">
-            <div class="header-content">
-                <div class="profile-section">
-                    <div class="profile-image">
-                        <img src="marat.jpeg" alt="Marat Gumarov" id="profile-img">
-                    </div>
-                    <div class="profile-info">
-                        <h1 class="name">Marat Gumarov</h1>
-                        <p class="title">Java/Kotlin Developer</p>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <i class="fab fa-telegram"></i>
-                                <a href="https://t.me/MaratGumarov" target="_blank">@MaratGumarov</a>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <a href="mailto:ikey678@gmail.com">ikey678@gmail.com</a>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fab fa-github"></i>
-                                <a href="https://github.com/MaratGumarov" target="_blank">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-actions">
-                    <button class="btn btn-secondary" onclick="window.print()">
-                        Download PDF
-                    </button>
-                    <button class="btn btn-secondary" onclick="toggleTheme()">
-                        <i class="fas fa-moon"></i>
-                        Dark Mode
-                    </button>
-                </div>
+    <div class="frame">
+
+        <!-- Top bar -->
+        <div class="topbar">
+            <span class="status"><span class="dot" aria-hidden="true"></span> Open to new opportunities</span>
+            <div class="topbar-actions">
+                <button class="ghost" id="theme-toggle" type="button" aria-label="Toggle colour theme">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i><span class="ghost-label">Dark</span>
+                </button>
+                <button class="ghost" type="button" onclick="window.print()" aria-label="Print or save as PDF">
+                    <i class="fa-solid fa-arrow-down" aria-hidden="true"></i><span>PDF</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Masthead -->
+        <header class="masthead">
+            <div class="masthead-text">
+                <h1 class="name">Marat<br>Gumarov</h1>
+                <p class="role">Software Engineer — Backend &amp; Agentic AI</p>
+                <ul class="contacts">
+                    <li><a href="mailto:ikey678@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> ikey678@gmail.com</a></li>
+                    <li><a href="https://github.com/MaratGumarov" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> github.com/MaratGumarov</a></li>
+                    <li><a href="https://t.me/MaratGumarov" target="_blank" rel="noopener"><i class="fa-brands fa-telegram" aria-hidden="true"></i> @MaratGumarov</a></li>
+                    <li><span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Oviedo, Spain</span></li>
+                </ul>
+            </div>
+            <div class="portrait">
+                <img src="marat.jpeg" alt="Marat Gumarov">
             </div>
         </header>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Summary Section -->
+        <main>
+            <!-- 01 — Summary -->
             <section class="section">
-                <h2 class="section-title">
-                    <i class="fas fa-user"></i>
-                    Summary
-                </h2>
-                <div class="section-content">
-                    <p class="summary-text">
-                        Experienced Java/Kotlin Developer with extensive experience in designing scalable systems and 
-                        enhancing data integration and processing using cutting-edge technologies. Skilled in developing 
-                        high-performing applications and backend systems, with a focus on driving technological advancements 
-                        and delivering robust solutions.
-                    </p>
+                <div class="sec-head">
+                    <span class="sec-no">01</span>
+                    <h2 class="sec-title">Summary</h2>
+                    <span class="sec-line" aria-hidden="true"></span>
                 </div>
+                <p class="lead">
+                    Software engineer with <strong>8+ years</strong> building scalable backend
+                    systems in Java and Kotlin — now focused on <strong>agentic AI</strong>:
+                    shipping production AI agents and MCP servers, and working spec-driven
+                    with AI coding tools to deliver faster across the stack.
+                </p>
             </section>
 
-            <!-- Skills Section -->
+            <!-- 02 — Skills -->
             <section class="section">
-                <h2 class="section-title">
-                    <i class="fas fa-code"></i>
-                    Languages & Core Skills
-                </h2>
-                <div class="section-content">
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3>Languages</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Russian (Native)</span>
-                                <span class="skill-tag">English (Intermediate)</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Programming Languages</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Java</span>
-                                <span class="skill-tag">Kotlin</span>
-                                <span class="skill-tag">Scala</span>
-                                <span class="skill-tag">C#</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Frameworks & Technologies</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Spring Boot</span>
-                                <span class="skill-tag">Microservices</span>
-                                <span class="skill-tag">GraphQL</span>
-                                <span class="skill-tag">JPA</span>
-                                <span class="skill-tag">Jooq</span>
-                                <span class="skill-tag">MapStruct</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Big Data & Cloud</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Apache Spark</span>
-                                <span class="skill-tag">Hadoop</span>
-                                <span class="skill-tag">Apache Sqoop</span>
-                                <span class="skill-tag">AWS Lambda</span>
-                                <span class="skill-tag">S3</span>
-                                <span class="skill-tag">SQS</span>
-                                <span class="skill-tag">SNS</span>
-                                <span class="skill-tag">Cognito</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Tools & DevOps</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Git</span>
-                                <span class="skill-tag">CI/CD</span>
-                                <span class="skill-tag">Gradle</span>
-                                <span class="skill-tag">Test Containers</span>
-                                <span class="skill-tag">JUnit</span>
-                                <span class="skill-tag">Performance Optimization</span>
-                            </div>
-                        </div>
+                <div class="sec-head">
+                    <span class="sec-no">02</span>
+                    <h2 class="sec-title">Skills</h2>
+                    <span class="sec-line" aria-hidden="true"></span>
+                </div>
+                <div class="skills">
+                    <div class="skill-group">
+                        <h3 class="skill-label">Agentic AI Engineering</h3>
+                        <ul class="tags">
+                            <li class="tag">Model Context Protocol (MCP)</li>
+                            <li class="tag">AI Agents</li>
+                            <li class="tag">Anthropic Claude API</li>
+                            <li class="tag">AWS Bedrock</li>
+                            <li class="tag">Claude Agent SDK</li>
+                            <li class="tag">Vercel AI SDK</li>
+                            <li class="tag">Prompt Caching</li>
+                            <li class="tag">OpenAI / Gemini API</li>
+                            <li class="tag">OAuth for AI Agents</li>
+                            <li class="tag">SSE Streaming</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-label">AI-Assisted Development</h3>
+                        <ul class="tags">
+                            <li class="tag">Claude Code</li>
+                            <li class="tag">Spec-Driven Development</li>
+                            <li class="tag">AI Pair Programming</li>
+                            <li class="tag">Agent Skills &amp; Subagents</li>
+                            <li class="tag">MCP Tooling</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-label">Programming Languages</h3>
+                        <ul class="tags">
+                            <li class="tag">Java</li>
+                            <li class="tag">Kotlin</li>
+                            <li class="tag">Python</li>
+                            <li class="tag">TypeScript</li>
+                            <li class="tag">Scala</li>
+                            <li class="tag">C#</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-label">Backend &amp; APIs</h3>
+                        <ul class="tags">
+                            <li class="tag">Spring Boot</li>
+                            <li class="tag">FastAPI</li>
+                            <li class="tag">Microservices</li>
+                            <li class="tag">gRPC</li>
+                            <li class="tag">GraphQL</li>
+                            <li class="tag">REST</li>
+                            <li class="tag">JPA</li>
+                            <li class="tag">jOOQ</li>
+                            <li class="tag">R2DBC</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-label">Frontend</h3>
+                        <ul class="tags">
+                            <li class="tag">React</li>
+                            <li class="tag">React Native / Expo</li>
+                            <li class="tag">Next.js</li>
+                            <li class="tag">Vite</li>
+                            <li class="tag">Tailwind CSS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-label">Data &amp; Cloud</h3>
+                        <ul class="tags">
+                            <li class="tag">PostgreSQL</li>
+                            <li class="tag">Apache Spark</li>
+                            <li class="tag">Hadoop</li>
+                            <li class="tag">Elasticsearch</li>
+                            <li class="tag">AWS</li>
+                            <li class="tag">Cloudflare Workers</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-label">Tools &amp; DevOps</h3>
+                        <ul class="tags">
+                            <li class="tag">Git</li>
+                            <li class="tag">CI/CD</li>
+                            <li class="tag">Docker</li>
+                            <li class="tag">Kubernetes</li>
+                            <li class="tag">Helm</li>
+                            <li class="tag">Gradle</li>
+                            <li class="tag">Test Containers</li>
+                            <li class="tag">JUnit</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-label">Spoken Languages</h3>
+                        <ul class="tags">
+                            <li class="tag">Russian — Native</li>
+                            <li class="tag">English — Intermediate</li>
+                            <li class="tag">Spanish — Basic</li>
+                        </ul>
                     </div>
                 </div>
             </section>
 
-            <!-- Experience Section -->
+            <!-- 03 — Experience -->
             <section class="section">
-                <h2 class="section-title">
-                    <i class="fas fa-briefcase"></i>
-                    Work Experience
-                </h2>
-                <div class="section-content">
-                    <div class="experience-timeline">
-                        <!-- Provectus -->
-                        <div class="experience-item">
-                            <div class="experience-header">
-                                <div class="experience-title">
-                                    <h3>Backend Developer</h3>
-                                    <span class="company">Provectus</span>
-                                </div>
-                                <div class="experience-period">
-                                    <span class="period">Mar 2022 - Present</span>
-                                    <span class="location">Serbia</span>
-                                </div>
-                            </div>
-                            <div class="experience-content">
-                                <ul class="achievements">
-                                    <li>Developed a comprehensive project and employee management system, significantly improving operational efficiency and data handling</li>
-                                    <li>Implemented a robust notification system incorporating change logs, message queues, and Slack integration, enabling tailored alerts based on user availability and time zones, reducing response delays</li>
-                                    <li>Designed and refined a role-based access control (RBAC) system to manage access rights securely and efficiently, ensuring proper authorization and data security</li>
-                                    <li>Created a changelog mechanism to maintain transparency and data integrity across the system, facilitating better auditing and reliability</li>
-                                    <li>Diagnosed and resolved critical system issues, improving overall stability and ensuring smooth operation for end users. Conducted extensive performance optimizations, including caching and database query improvements, which led to faster response times and improved system efficiency</li>
-                                    <li>Participated in the development of a microservice architecture for a smart search service within corporate documents (PDF, PNG, JPG)</li>
-                                    <li>Developed a modern GraphQL API for legacy services. Implemented a solution for generating GraphQL APIs and semi-automatic mapping of GraphQL queries to JPA criteria, simplifying system development</li>
-                                </ul>
-                                <div class="tech-stack">
-                                    <span class="tech-tag">Kotlin</span>
-                                    <span class="tech-tag">Spring Boot</span>
-                                    <span class="tech-tag">Jooq</span>
-                                    <span class="tech-tag">Test Containers</span>
-                                    <span class="tech-tag">MapStruct</span>
-                                    <span class="tech-tag">AWS Lambda</span>
-                                    <span class="tech-tag">Cognito</span>
-                                    <span class="tech-tag">S3</span>
-                                    <span class="tech-tag">SQS</span>
-                                    <span class="tech-tag">SNS</span>
-                                    <span class="tech-tag">GraphQL</span>
-                                    <span class="tech-tag">JNI</span>
-                                    <span class="tech-tag">JPA</span>
-                                    <span class="tech-tag">Apache POI</span>
-                                    <span class="tech-tag">Slack API</span>
-                                    <span class="tech-tag">Gradle</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="sec-head">
+                    <span class="sec-no">03</span>
+                    <h2 class="sec-title">Experience</h2>
+                    <span class="sec-line" aria-hidden="true"></span>
+                </div>
 
-                        <!-- Sberbank -->
-                        <div class="experience-item">
-                            <div class="experience-header">
-                                <div class="experience-title">
-                                    <h3>Java Developer / Data Engineer</h3>
-                                    <span class="company">Sberbank</span>
-                                </div>
-                                <div class="experience-period">
-                                    <span class="period">2018 – 2022</span>
-                                    <span class="location">Russia</span>
-                                </div>
-                            </div>
-                            <div class="experience-content">
-                                <ul class="achievements">
-                                    <li>Participated in the development of a tool for fast streaming of data from DBMS (mainly Oracle) to Hadoop, enabling the transfer of tens of terabytes daily into the Sberbank data lake</li>
-                                    <li>Contributed to the development and support of all major project modules, including the initial loading module, incremental data load module, data application module, and backup module</li>
-                                    <li>Modified the open-source Apache Sqoop tool to implement missing functionality, enhancing its capability to suit project requirements</li>
-                                </ul>
-                                <div class="tech-stack">
-                                    <span class="tech-tag">Java</span>
-                                    <span class="tech-tag">Hadoop</span>
-                                    <span class="tech-tag">Apache Spark</span>
-                                    <span class="tech-tag">Oracle GoldenGate for Big Data</span>
-                                    <span class="tech-tag">Apache Sqoop</span>
-                                    <span class="tech-tag">Scala</span>
-                                    <span class="tech-tag">Bash</span>
-                                    <span class="tech-tag">Hive</span>
-                                    <span class="tech-tag">Oozie</span>
-                                    <span class="tech-tag">Spring</span>
-                                    <span class="tech-tag">JUnit</span>
-                                </div>
-                            </div>
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3 class="entry-role">Software Engineer</h3>
+                            <span class="entry-org">Provectus</span>
                         </div>
-
-                        <!-- Sberbank-Technologies -->
-                        <div class="experience-item">
-                            <div class="experience-header">
-                                <div class="experience-title">
-                                    <h3>Java Developer</h3>
-                                    <span class="company">Sberbank-Technologies</span>
-                                </div>
-                                <div class="experience-period">
-                                    <span class="period">2017 – 2018</span>
-                                    <span class="location">Russia</span>
-                                </div>
-                            </div>
-                            <div class="experience-content">
-                                <ul class="achievements">
-                                    <li>Development of an authentication service for internal resources</li>
-                                </ul>
-                                <div class="tech-stack">
-                                    <span class="tech-tag">Java</span>
-                                    <span class="tech-tag">Spring</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earlier Experience -->
-                        <div class="experience-item">
-                            <div class="experience-header">
-                                <div class="experience-title">
-                                    <h3>IT Security Administrator, C# Developer</h3>
-                                    <span class="company">Various Companies</span>
-                                </div>
-                                <div class="experience-period">
-                                    <span class="period">2012 – 2017</span>
-                                    <span class="location">Russia</span>
-                                </div>
-                            </div>
+                        <div class="entry-meta">
+                            <span>Mar 2022 — Present</span>
+                            <span>Remote · Spain</span>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <!-- Awards & Achievements Section -->
-            <section class="section">
-                <h2 class="section-title">
-                    <i class="fas fa-trophy"></i>
-                    Awards & Achievements
-                </h2>
-                <div class="section-content">
-                    <ul class="achievements">
-                        <li>Winner, AWS Generative AI Innovation Center Partner Alliance MCP Hackathon (Deloitte & Provectus, 2025) — ranked among the ten prize-winning teams; certified expertise in helping customers accelerate business outcomes with AWS Generative AI solutions</li>
+                    <p class="summary-line">Core engineer on HOPS — Provectus' company-wide internal platform for workforce management, staffing, presales, and delivery economics.</p>
+                    <ul class="points">
+                        <li>Designed and shipped to production an MCP (Model Context Protocol) server that gives AI agents secure, governed access to the company's internal workforce-management platform — with OAuth&nbsp;2.0 token-based authorization, curated read-only data tools, and a gated SQL escape-hatch; owned the production rollout.</li>
+                        <li>Built an AI agent for automated Statement of Work generation on Anthropic Claude via AWS Bedrock — a custom agent loop that pulls live client and staffing data from internal HOPS services, detects conflicts, and streams responses over SSE; introduced Anthropic prompt caching to cut token cost and latency in the agent loop.</li>
+                        <li>Developed a financial microservice in Kotlin (Spring Boot, gRPC, jOOQ, R2DBC) that computes monthly employee costs and delivery economics, integrating BambooHR compensation data.</li>
+                        <li>Implemented a notification system with change logs, message queues, and Slack integration, delivering timezone- and availability-aware alerts and weekly workload reports that reduced response delays.</li>
+                        <li>Designed a role-based access control (RBAC) system for secure, fine-grained authorization across the platform.</li>
+                        <li>Built a changelog mechanism providing full entity audit history, improving transparency and data integrity.</li>
+                        <li>Contributed to a microservice-based intelligent search service over corporate documents (PDF, PNG, JPG), combining OCR with Elasticsearch-backed search.</li>
+                        <li>Developed a modern GraphQL API over legacy services, including tooling to generate GraphQL schemas and semi-automatically map queries to JPA criteria.</li>
                     </ul>
-                </div>
-            </section>
+                    <ul class="tags">
+                        <li class="tag">Kotlin</li>
+                        <li class="tag">Python</li>
+                        <li class="tag">TypeScript</li>
+                        <li class="tag">Spring Boot</li>
+                        <li class="tag">FastAPI</li>
+                        <li class="tag">MCP</li>
+                        <li class="tag">Anthropic Claude</li>
+                        <li class="tag">AWS Bedrock</li>
+                        <li class="tag">jOOQ</li>
+                        <li class="tag">gRPC</li>
+                        <li class="tag">GraphQL</li>
+                        <li class="tag">R2DBC</li>
+                        <li class="tag">PostgreSQL</li>
+                        <li class="tag">Docker</li>
+                        <li class="tag">Kubernetes</li>
+                        <li class="tag">React</li>
+                    </ul>
+                </article>
 
-            <!-- Additional Experience -->
-            <section class="section">
-                <h2 class="section-title">
-                    <i class="fas fa-plus-circle"></i>
-                    Additional Experience
-                </h2>
-                <div class="section-content">
-                    <div class="additional-item">
-                        <h3>Open Source Contributor</h3>
-                        <p>Contributed to the development of an open-source project, Kafka-UI</p>
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3 class="entry-role">Java Developer / Data Engineer</h3>
+                            <span class="entry-org">Sberbank</span>
+                        </div>
+                        <div class="entry-meta">
+                            <span>2018 — 2022</span>
+                            <span>Russia</span>
+                        </div>
                     </div>
-                </div>
+                    <ul class="points">
+                        <li>Contributed to a tool for fast streaming of data from relational databases (mainly Oracle) into Hadoop, moving tens of terabytes daily into the Sberbank data lake.</li>
+                        <li>Developed and supported all major modules of the project — initial load, incremental load, data application, and backup.</li>
+                        <li>Extended the open-source Apache Sqoop tool with missing functionality to fit project requirements.</li>
+                    </ul>
+                    <ul class="tags">
+                        <li class="tag">Java</li>
+                        <li class="tag">Hadoop</li>
+                        <li class="tag">Apache Spark</li>
+                        <li class="tag">Oracle GoldenGate</li>
+                        <li class="tag">Apache Sqoop</li>
+                        <li class="tag">Scala</li>
+                        <li class="tag">Hive</li>
+                        <li class="tag">Oozie</li>
+                        <li class="tag">Spring</li>
+                    </ul>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3 class="entry-role">Java Developer</h3>
+                            <span class="entry-org">Sberbank-Technologies</span>
+                        </div>
+                        <div class="entry-meta">
+                            <span>2017 — 2018</span>
+                            <span>Russia</span>
+                        </div>
+                    </div>
+                    <ul class="points">
+                        <li>Developed an authentication service for internal corporate resources.</li>
+                    </ul>
+                    <ul class="tags">
+                        <li class="tag">Java</li>
+                        <li class="tag">Spring</li>
+                    </ul>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3 class="entry-role">IT Security Administrator · C# Developer</h3>
+                            <span class="entry-org">Various Companies</span>
+                        </div>
+                        <div class="entry-meta">
+                            <span>2012 — 2017</span>
+                            <span>Russia</span>
+                        </div>
+                    </div>
+                    <p class="summary-line">Information security administration and C# / .NET application development.</p>
+                </article>
             </section>
 
-            <!-- Education Section -->
+            <!-- 04 — Side Projects -->
             <section class="section">
-                <h2 class="section-title">
-                    <i class="fas fa-graduation-cap"></i>
-                    Education
-                </h2>
-                <div class="section-content">
-                    <div class="education-timeline">
-                        <div class="education-item">
-                            <div class="education-header">
-                                <h3>Apache Spark for Data Engineering Course</h3>
-                                <span class="institution">NewProLab</span>
-                            </div>
-                            <div class="education-details">
-                                <span class="duration">116 hours</span>
-                                <span class="year">2020, Moscow</span>
-                            </div>
+                <div class="sec-head">
+                    <span class="sec-no">04</span>
+                    <h2 class="sec-title">Side Projects</h2>
+                    <span class="sec-line" aria-hidden="true"></span>
+                </div>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-role">AnyTest — AI Interview Coach</h3>
+                        <a class="entry-link" href="https://github.com/MaratGumarov/AnyTest" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i> Repository
+                        </a>
+                    </div>
+                    <p class="summary-line">Web app for technical-interview prep — an AI coach on Google Gemini generates and evaluates questions, with voice input via the Web Speech API and a swipeable card UI. Fully localized into six languages.</p>
+                    <ul class="tags">
+                        <li class="tag">React 19</li>
+                        <li class="tag">TypeScript</li>
+                        <li class="tag">Vite</li>
+                        <li class="tag">Google Gemini API</li>
+                        <li class="tag">Tailwind CSS</li>
+                    </ul>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-role">Finch — AI Financial Assistant</h3>
+                        <a class="entry-link" href="https://github.com/MaratGumarov/Finch" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i> Repository
+                        </a>
+                    </div>
+                    <p class="summary-line">A cross-platform mobile finance assistant — a conversational AI agent built with the Vercel AI SDK (Google Gemini), with a React Native / Expo client and a serverless Cloudflare Workers backend.</p>
+                    <ul class="tags">
+                        <li class="tag">React Native</li>
+                        <li class="tag">Expo</li>
+                        <li class="tag">Vercel AI SDK</li>
+                        <li class="tag">Cloudflare Workers</li>
+                        <li class="tag">TypeScript</li>
+                    </ul>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-role">Claude Code Telegram Bot</h3>
+                        <a class="entry-link" href="https://github.com/MaratGumarov/claude-code-telegram" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i> Repository
+                        </a>
+                    </div>
+                    <p class="summary-line">Extended an open-source Telegram bot for remote access to Claude Code — migrated it to the official Claude Agent SDK with real-time streaming UX, and added a JWT-secured web app for browsing git diffs from chat.</p>
+                    <ul class="tags">
+                        <li class="tag">Python</li>
+                        <li class="tag">FastAPI</li>
+                        <li class="tag">Claude Agent SDK</li>
+                        <li class="tag">Telegram Bot API</li>
+                        <li class="tag">JWT</li>
+                    </ul>
+                </article>
+            </section>
+
+            <!-- 05 — Recognition -->
+            <section class="section">
+                <div class="sec-head">
+                    <span class="sec-no">05</span>
+                    <h2 class="sec-title">Recognition</h2>
+                    <span class="sec-line" aria-hidden="true"></span>
+                </div>
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3 class="entry-role">AWS Generative AI — MCP Hackathon</h3>
+                            <span class="entry-org">Winner</span>
                         </div>
-                        <div class="education-item">
-                            <div class="education-header">
-                                <h3>Java Developer Course</h3>
-                                <span class="institution">IT-Park</span>
-                            </div>
-                            <div class="education-details">
-                                <span class="duration">160 hours</span>
-                                <span class="year">2016, Kazan</span>
-                            </div>
+                        <div class="entry-meta">
+                            <span>Deloitte &amp; Provectus</span>
+                            <span>2025</span>
                         </div>
-                        <div class="education-item">
-                            <div class="education-header">
-                                <h3>Bachelor's in Comprehensive Information Security of Automated Systems</h3>
-                                <span class="institution">Kazan Federal University</span>
-                            </div>
-                            <div class="education-details">
-                                <span class="year">2007 – 2012</span>
-                            </div>
+                    </div>
+                    <p class="summary-line">Ranked among the ten prize-winning teams at the AWS Generative AI Innovation Center Partner Alliance hackathon — recognized for accelerating business outcomes with AWS Generative AI solutions.</p>
+                </article>
+            </section>
+
+            <!-- 06 — Open Source -->
+            <section class="section">
+                <div class="sec-head">
+                    <span class="sec-no">06</span>
+                    <h2 class="sec-title">Open Source</h2>
+                    <span class="sec-line" aria-hidden="true"></span>
+                </div>
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-role">Contributor — Kafka-UI</h3>
+                        <a class="entry-link" href="https://github.com/provectus/kafka-ui" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i> Project
+                        </a>
+                    </div>
+                    <p class="summary-line">Contributed features and improvements to Kafka-UI, an open-source web GUI for Apache Kafka management — including Prometheus metrics support and schema-registry fixes.</p>
+                </article>
+            </section>
+
+            <!-- 07 — Education -->
+            <section class="section">
+                <div class="sec-head">
+                    <span class="sec-no">07</span>
+                    <h2 class="sec-title">Education</h2>
+                    <span class="sec-line" aria-hidden="true"></span>
+                </div>
+                <div class="edu">
+                    <div class="edu-row">
+                        <div>
+                            <span class="edu-degree">BSc — Information Security of Automated Systems</span>
+                            <span class="edu-org">Kazan Federal University</span>
                         </div>
+                        <span class="edu-meta">2007 — 2012</span>
+                    </div>
+                    <div class="edu-row">
+                        <div>
+                            <span class="edu-degree">Apache Spark for Data Engineering</span>
+                            <span class="edu-org">NewProLab · 116 hours</span>
+                        </div>
+                        <span class="edu-meta">2020 · Moscow</span>
+                    </div>
+                    <div class="edu-row">
+                        <div>
+                            <span class="edu-degree">Java Developer Course</span>
+                            <span class="edu-org">IT-Park · 160 hours</span>
+                        </div>
+                        <span class="edu-meta">2016 · Kazan</span>
                     </div>
                 </div>
             </section>
         </main>
 
-        <!-- Footer -->
         <footer class="footer">
-            <div class="footer-content">
-                <p>&copy; 2025 Marat Gumarov. All rights reserved.</p>
-                <div class="footer-links" style="display: flex; gap: 1.2rem; justify-content: center; margin-top: 0.5rem;">
-                    <a href="https://t.me/MaratGumarov" target="_blank" aria-label="Telegram" class="footer-link"><i class="fab fa-telegram"></i></a>
-                    <a href="mailto:ikey678@gmail.com" aria-label="Email" class="footer-link"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/MaratGumarov" target="_blank" aria-label="GitHub" class="footer-link"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
+            <span>© 2026 Marat Gumarov</span>
+            <span>Updated May 2026</span>
         </footer>
+
     </div>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
