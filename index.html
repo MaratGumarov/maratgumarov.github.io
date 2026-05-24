@@ -105,7 +105,6 @@
                             <li class="tag">Prompt Caching</li>
                             <li class="tag">OpenAI / Gemini API</li>
                             <li class="tag">OAuth for AI Agents</li>
-                            <li class="tag">SSE Streaming</li>
                         </ul>
                     </div>
                     <div class="skill-group">
@@ -210,7 +209,7 @@
                     <p class="summary-line">Core engineer on HOPS — Provectus' company-wide internal platform for workforce management, staffing, presales, and delivery economics.</p>
                     <ul class="points">
                         <li>Designed and shipped to production an MCP (Model Context Protocol) server that gives AI agents secure, governed access to the company's internal workforce-management platform — with OAuth&nbsp;2.0 token-based authorization, curated read-only data tools, and a gated SQL escape-hatch; owned the production rollout.</li>
-                        <li>Built an AI agent for automated Statement of Work generation on Anthropic Claude via AWS Bedrock — a custom agent loop that pulls live client and staffing data from internal HOPS services, detects conflicts, and streams responses over SSE; introduced Anthropic prompt caching to cut token cost and latency in the agent loop.</li>
+                        <li>Built an AI agent for automated Statement of Work generation on Anthropic Claude via AWS Bedrock — a custom agent loop that pulls live client and staffing data from internal HOPS services and detects conflicts; introduced Anthropic prompt caching to cut token cost and latency in the agent loop.</li>
                         <li>Developed a financial microservice in Kotlin (Spring Boot, gRPC, jOOQ, R2DBC) that computes monthly employee costs and delivery economics, integrating BambooHR compensation data.</li>
                         <li>Implemented a notification system with change logs, message queues, and Slack integration, delivering timezone- and availability-aware alerts and weekly workload reports that reduced response delays.</li>
                         <li>Designed a role-based access control (RBAC) system for secure, fine-grained authorization across the platform.</li>
