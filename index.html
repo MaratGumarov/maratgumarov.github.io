@@ -81,9 +81,10 @@
                     Software engineer with <strong>8+ years</strong> building scalable backend
                     systems in Java and Kotlin — now shipping <strong>production agentic AI</strong>:
                     MCP servers and AI agents on Anthropic Claude and AWS Bedrock, running
-                    company-wide at Provectus. <strong>Winner of the 2025 AWS Generative AI
-                    MCP hackathon</strong> (Deloitte &amp; Provectus). Works spec-driven with
-                    AI coding tools to deliver faster across the stack.
+                    company-wide at Provectus. <strong>Claude Certified Architect</strong> (Anthropic)
+                    and <strong>winner of the 2025 AWS Generative AI MCP hackathon</strong>
+                    (Deloitte &amp; Provectus). Works spec-driven with AI coding agents to
+                    deliver faster across the stack.
                 </p>
             </section>
 
@@ -108,8 +109,9 @@
                     </div>
                     <p class="summary-line">Core engineer on HOPS — Provectus' company-wide internal platform for workforce management, staffing, presales, and delivery economics.</p>
                     <ul class="points">
-                        <li>Shipped to production an MCP (Model Context Protocol) server that gives AI agents secure, governed access to company-wide workforce data — OAuth&nbsp;2.0 token-based authorization, curated read and write tools, and a gated SQL escape-hatch; owned the production rollout end to end.</li>
-                        <li>Automated Statement of Work generation with a custom AI agent on Anthropic Claude via AWS Bedrock — the agent loop pulls live client and staffing data from internal HOPS services and flags conflicts; cut token cost and latency by introducing Anthropic prompt caching.</li>
+                        <li>Built the HOPS Agent end to end — an in-product AI assistant (Vercel AI SDK, Claude on AWS Bedrock) that works through the HOPS MCP server and renders generative, data-backed dashboard widgets users can pin and share; hardened it for production with strict schema validation and a self-repair retry loop, an LLM-judged eval harness, and deferred tool loading that cut tool-definition tokens ~5× per request.</li>
+                        <li>Shipped to production an MCP (Model Context Protocol) server that gives AI agents secure, governed access to company-wide workforce data — OAuth&nbsp;2.1 authorization, curated read and write tools with preview-and-confirm for risky writes, a gated read-only SQL escape-hatch, and per-tool usage analytics; owned the production rollout end to end.</li>
+                        <li>Automated Statement of Work generation with a custom AI agent on Anthropic Claude via AWS Bedrock — the agent loop pulls live client and staffing data from internal HOPS services and flags conflicts; cut token cost and latency by introducing Anthropic prompt caching. Then took the SOW MCP server to production and shipped it as a Claude plugin on the company's internal plugin marketplace — agent skills with evals for daily SOW work, acting under each user's own OAuth identity.</li>
                         <li>Built the financial microservice behind the platform's delivery economics — monthly employee-cost computation integrating BambooHR compensation data (Kotlin, Spring Boot, gRPC, jOOQ, R2DBC).</li>
                         <li>Reduced response delays across teams with a timezone- and availability-aware notification system — change logs, message queues, Slack alerts, and automated weekly workload reports.</li>
                         <li>Secured the platform with fine-grained role-based access control (RBAC) and a full entity audit-history changelog, improving authorization, transparency, and data integrity.</li>
@@ -124,6 +126,7 @@
                         <li class="tag">FastAPI</li>
                         <li class="tag">MCP</li>
                         <li class="tag">Anthropic Claude</li>
+                        <li class="tag">Vercel AI SDK</li>
                         <li class="tag">AWS Bedrock</li>
                         <li class="tag">jOOQ</li>
                         <li class="tag">gRPC</li>
@@ -218,6 +221,8 @@
                             <li class="tag">Claude Agent SDK</li>
                             <li class="tag">Vercel AI SDK</li>
                             <li class="tag">Prompt Caching</li>
+                            <li class="tag">Generative UI</li>
+                            <li class="tag">LLM Evals</li>
                             <li class="tag">OpenAI / Gemini API</li>
                             <li class="tag">OAuth for AI Agents</li>
                         </ul>
@@ -228,7 +233,7 @@
                             <li class="tag">Claude Code</li>
                             <li class="tag">Spec-Driven Development</li>
                             <li class="tag">AI Pair Programming</li>
-                            <li class="tag">Agent Skills &amp; Subagents</li>
+                            <li class="tag">Agent Skills, Plugins &amp; Subagents</li>
                             <li class="tag">MCP Tooling</li>
                         </ul>
                     </div>
@@ -330,9 +335,6 @@
                 <article class="entry">
                     <div class="entry-head">
                         <h3 class="entry-role">Finch — AI Financial Assistant</h3>
-                        <a class="entry-link" href="https://github.com/MaratGumarov/Finch" target="_blank" rel="noopener">
-                            <i class="fa-brands fa-github" aria-hidden="true"></i> Repository
-                        </a>
                     </div>
                     <p class="summary-line">A cross-platform mobile finance assistant — a conversational AI agent built with the Vercel AI SDK (Google Gemini), with a React Native / Expo client and a serverless Cloudflare Workers backend.</p>
                     <ul class="tags">
@@ -369,6 +371,21 @@
                     <h2 class="sec-title">Recognition</h2>
                     <span class="sec-line" aria-hidden="true"></span>
                 </div>
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3 class="entry-role">Claude Certified Architect — Foundations</h3>
+                            <span class="entry-org">Anthropic</span>
+                        </div>
+                        <div class="entry-meta">
+                            <span>2026</span>
+                            <a class="entry-link" href="https://www.credly.com/badges/943d5104-abec-4556-b393-a389c5ed1c13" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-certificate" aria-hidden="true"></i> Verify on Credly
+                            </a>
+                        </div>
+                    </div>
+                    <p class="summary-line">Anthropic's credential for architects designing and building production-grade applications with Claude — Claude Code, the Claude Agent SDK, the Claude API, and MCP.</p>
+                </article>
                 <article class="entry">
                     <div class="entry-head">
                         <div>
@@ -437,7 +454,7 @@
 
         <footer class="footer">
             <span>© 2026 Marat Gumarov</span>
-            <span>Updated July 2026</span>
+            <span>Updated October 2026</span>
         </footer>
 
     </div>
