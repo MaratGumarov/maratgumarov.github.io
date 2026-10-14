@@ -67,7 +67,8 @@ maratgumarov.github.io/
 ├── styles.css          # CSS styles and responsive design
 ├── script.js           # JavaScript functionality
 ├── README.md           # Project documentation
-└── cv marat oct 2024 - 2.pdf  # Original PDF CV
+├── marat.jpeg          # Portrait
+└── Marat-Gumarov-CV.pdf  # Downloadable PDF (regenerated on every change)
 ```
 
 ## 🎯 Key Sections
